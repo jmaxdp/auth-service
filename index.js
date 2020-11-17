@@ -1,4 +1,3 @@
-global.fetch = require("node-fetch");
 const {
   AuthenticationDetails,
   CognitoUserPool,
@@ -6,6 +5,7 @@ const {
   CognitoUserAttribute,
   CognitoAccessToken
 } = require("amazon-cognito-identity-js");
+// global.fetch = require("node-fetch");
 
 class AWSManager {
   constructor(UserPoolId, ClientId) {
@@ -24,9 +24,6 @@ class AWSManager {
 
   authenticate(Username, Password) {
     return new Promise((resolve, reject) => {
-      console.log('username: ',);
-      console.log('password: ',);
-      console.log('pool: ', this.pool);
       const authDetails = new AuthenticationDetails({
         Username,
         Password
