@@ -1,0 +1,19 @@
+{
+  "name": "user-service-api",
+  "version": "1.0.0",
+  "description": "user service api",
+  "main": "index.js",
+  "author": "Jerry Maxey",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start":"nodemon index.js"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^4.3.4",
+    "aws-sdk": "^2.738.0",
+    "lodash": "^4.17.20",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4"
+  }
+}
