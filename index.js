@@ -5,7 +5,6 @@ const {
   CognitoUserAttribute,
   CognitoAccessToken
 } = require("amazon-cognito-identity-js");
-// global.fetch = require("node-fetch");
 
 class AWSManager {
   constructor(UserPoolId, ClientId) {
